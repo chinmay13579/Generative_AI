@@ -1,50 +1,39 @@
 # Generative_AI
 
-This repository explores the integration of generative AI models using cloud services, with a focus on AWS SageMaker and Python-based applications.
+# Generative AI With Cloud
 
-📁 Project Structure
-AWS sagemaker/ — Jupyter notebooks and scripts demonstrating use of models like Falcon-40B with SageMaker.
+This repository explores the integration of generative AI models using cloud services, focusing on AWS SageMaker and Falcon-40B for blog content generation.
 
-Blog generation in aws/ — A lightweight Flask app for blog generation using generative AI, along with dependencies in requirements.txt.
 
-LICENSE — The license file for this repository.
+## 🧠 Project Overview
 
-README.md — This file.
+This project contains:
+- **Jupyter notebooks** to deploy and interact with Falcon-40B using AWS SageMaker.
+- A **Flask-based application** that enables end-users to generate blogs via a simple web interface.
 
-📦 Setup Instructions
-Prerequisites
-Python 3.8+
+## 📊 Architecture
 
-AWS account with SageMaker permissions
+![Architecture for Blog Generation](./A_diagram_titled_"Architecture_for_Blog_Generation.png)
 
-pip installed
+### Flow Description
 
-Clone the Repository
-bash
-Copy
-Edit
+1. **User** interacts with the web UI.
+2. **Flask App** processes the input and sends a prompt to AWS SageMaker.
+3. **AWS SageMaker** runs the Falcon-40B model to generate content.
+4. The response is passed back and displayed to the user.
+
+## 🛠️ Setup Instructions
+
+### Prerequisites
+
+- Python 3.8+
+- AWS Account with SageMaker access
+- Virtual environment (recommended)
+
+### Clone the Repository
+
+```bash
 git clone https://github.com/<your-username>/Generative-AI-With-Cloud.git
 cd Generative-AI-With-Cloud
-Install Dependencies
-Navigate to the Flask app folder:
 
-bash
-Copy
-Edit
-cd "Blog generation in aws"
-pip install -r requirements.txt
-🚀 Usage
-AWS SageMaker
-In the AWS sagemaker/ directory:
 
-falcon40B-instruct-notebook-full.ipynb contains a complete example of deploying and interacting with the Falcon-40B model.
-
-Run the notebooks directly in SageMaker Studio or JupyterLab.
-
-Blog Generation App
-bash
-Copy
-Edit
-cd "Blog generation in aws"
-python app.py
-This starts a local Flask server for generating blog content using AI.

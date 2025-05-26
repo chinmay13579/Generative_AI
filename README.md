@@ -11,9 +11,6 @@ This project contains:
 - **Jupyter notebooks** to deploy and interact with Falcon-40B using AWS SageMaker.
 - A **Flask-based application** that enables end-users to generate blogs via a simple web interface.
 
-## 📊 Architecture
-
-![Architecture for Blog Generation](./A_diagram_titled_"Architecture_for_Blog_Generation.png)
 
 ### Flow Description
 

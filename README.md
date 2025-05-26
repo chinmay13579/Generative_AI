@@ -1,4 +1,4 @@
-# Generative_AI
+
 
 # Generative AI With Cloud
 
@@ -17,8 +17,6 @@ This project demonstrates how to use **AWS Bedrock** with **LLaMA2**, **S3**, an
 
 ![Architecture for Blog Generation](./diagram.png)
 ### Flow Description
-
-### Flow
 
 1. User enters a blog topic in the web app (Flask).
 2. Flask calls an API or Lambda handler.
